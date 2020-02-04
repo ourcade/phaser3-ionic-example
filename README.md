@@ -2,6 +2,20 @@
 
 A basic Ionic example based on the official [Your First Ionic App: Angular](https://ionicframework.com/docs/angular/your-first-app) guide.
 
+## Running Project
+
+You need Ionic installed.
+
+```bash
+npm install -g @ionic/cli
+```
+
+Then run with:
+
+```bash
+npm run serve
+```
+
 ## Tabs
 
 - **Tab 1**: The basic Phaser example of a bouncing logo
