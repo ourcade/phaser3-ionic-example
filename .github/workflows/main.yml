@@ -28,3 +28,4 @@ jobs:
         BRANCH: gh-pages # The branch the action should deploy to.
         FOLDER: www # The folder the action should deploy.
         CLEAN: true
+
