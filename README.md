@@ -2,6 +2,10 @@
 
 A basic Ionic example based on the official [Your First Ionic App: Angular](https://ionicframework.com/docs/angular/your-first-app) guide.
 
+## Demo
+
+https://ourcade.github.io/phaser3-ionic-example
+
 ## Running Project
 
 You need Ionic installed.
