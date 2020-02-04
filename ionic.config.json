@@ -1,0 +1,7 @@
+{
+  "name": "phaser3-ionic-example",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
