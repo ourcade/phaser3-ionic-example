@@ -1,8 +1,0 @@
-{
-  "appId": "io.ionic.starter",
-  "appName": "phaser3-ionic-example",
-  "bundledWebRuntime": false,
-  "npmClient": "npm",
-  "webDir": "www",
-  "cordova": {}
-}
