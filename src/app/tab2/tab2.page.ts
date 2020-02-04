@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 
 import Phaser from 'phaser'
 
@@ -10,13 +10,21 @@ import GameScene, { SCENE_KEY } from './game/GameScene'
 	templateUrl: 'tab2.page.html',
 	styleUrls: ['tab2.page.scss']
 })
-export class Tab2Page implements OnInit
+export class Tab2Page
 {
+	private game: Phaser.Game
+
 	constructor() {}
 
-	ngOnInit()
+	ionViewWillEnter()
 	{
-		const game = new Phaser.Game(config)
-		game.scene.add(SCENE_KEY, GameScene, true)
+		this.game = new Phaser.Game(config)
+		this.game.scene.add(SCENE_KEY, GameScene, true)
+	}
+
+	ionViewDidLeave()
+	{
+		this.game.destroy(true)
+		this.game = null
 	}
 }

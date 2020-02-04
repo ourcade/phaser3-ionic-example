@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 
 import Phaser from 'phaser'
 // import HelloWorldScene from './phaser/HelloWorldScene'
@@ -9,16 +9,18 @@ import CrateScene from './phaser/CrateScene'
 	templateUrl: 'tab3.page.html',
 	styleUrls: ['tab3.page.scss']
 })
-export class Tab3Page implements OnInit
+export class Tab3Page
 {
+	private game: Phaser.Game
+
 	constructor()
 	{
 	}
 
-	ngOnInit()
+	ionViewWillEnter()
 	{
 		const config: Phaser.Types.Core.GameConfig = {
-			parent: 'phaser-container',
+			parent: 'phaser-container-3',
 			type: Phaser.AUTO,
 			width: '100%',
 			height: '100%',
@@ -31,6 +33,12 @@ export class Tab3Page implements OnInit
 			scene: CrateScene
 		}
 
-		return new Phaser.Game(config)
+		this.game = new Phaser.Game(config)
+	}
+
+	ionViewDidLeave()
+	{
+		this.game.destroy(true)
+		this.game = null
 	}
 }
