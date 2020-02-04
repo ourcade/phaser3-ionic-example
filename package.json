@@ -7,7 +7,7 @@
     "ng": "ng",
     "start": "ng serve",
 	"build": "ng run app:build",
-	"build-gh": "ng run app:build --base-href /phaser3-ionic-example/",
+	"build-gh": "ng run app:build --deploy-url /phaser3-ionic-example/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
